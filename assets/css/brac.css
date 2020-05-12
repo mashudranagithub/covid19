@@ -1,0 +1,1615 @@
+/*******************************
+1. Common CSS Start Here
+*******************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+
+ul li {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+img{
+    width: 100%;
+    transition: all 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+header .header-main.sticky .logo a img {
+    max-width: 450px !important;
+}
+
+.logo a img{
+    max-width: 700px;
+    transition:all 1s;
+    min-width: auto !important;
+}
+
+.logo a img:hover {
+    transform: none;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+input:hover, .btn:hover, button:hover,
+input:focus, .btn:focus, button:focus,
+input:focus-within, .btn:focus-within, button:focus-within,
+a:hover, a:focus, a:focus-within {
+    box-shadow: none;
+    outline:none;
+    border-color:#fff;
+}
+
+a.btn {
+    padding: 2px 10px;
+    margin: 0px;
+}
+
+a.btn.btn-bracjpg {
+    padding: 2px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    border-radius: 0px;
+    border: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    transition: all 0.5s;
+}
+
+a.btn.btn-bracjpg:hover {
+    background: #ffffff;
+    color: #da6727;
+}
+
+.btn-big{
+    min-width: 200px;
+    background: linear-gradient(to right, #e64f04, #d0021b) !important;
+    transition: all 0.5s;
+}
+
+.btn-big:hover{
+    background: linear-gradient(to right, #d0021b, #e64f04) !important;
+}
+
+#top {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    display: none;
+    background: #da6727;
+    padding: 5px 7px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+
+h2 {
+    font-size: 2.2rem;
+    color: #da6727;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #da6727;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #da6727;
+}
+
+h4 a{
+    color: #fff;
+}
+
+h4 a:hover{
+    color: #fff;
+    text-decoration: none ;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-bottom: 0px;
+    letter-spacing: 0.2px;
+    text-transform: unset;
+}
+
+.section-heading {
+    overflow: hidden;
+    border-bottom: 1px solid #da6727;
+    margin: 30px 0;
+}
+
+.section-heading h2,
+.section-heading h3 {
+    margin-bottom: 5px;
+}
+
+/*******************************
+1. Common CSS End Here
+*******************************/
+
+
+/*******************************
+2. Header CSS Start Here
+*******************************/
+
+header#header {
+    width: 100%;
+    height: auto;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 1);
+}
+
+header#header .container {
+    /*max-width: 95vw;*/
+}
+
+
+div.header-main nav.navbar li.nav-item a.nav-link,
+div.header-main nav.navbar li.nav-item ul.dropdown-menu li a.dropdown-item {
+    /*text-transform: uppercase !important;*/
+    font-size: 12px;
+    color: #282828;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+header#header a:hover {
+    color: #fff;
+}
+
+ul.dropdown-menu li a:hover {
+    color: #ffffff !important;
+    background-color: #da6727!important;
+}
+/*Header Top*/
+.header-top {
+    height: 35px;
+    background: #da6727;
+}
+
+header#header input.form-control[type="search"] {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 3px 15px;
+    height: 30px;
+    font-size: 12px;
+    background: transparent;
+    color: #fff;
+    line-height: 25px;
+    border: 1px solid #fff;
+    display: none;
+    z-index: 999999999999;
+    background: #da6727;
+    outline: none;
+    box-shadow: none;
+}
+
+input[type="search"]::-webkit-input-placeholder { /* Edge */
+  color: #fff;
+}
+
+input[type="search"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+input[type="search"]::placeholder {
+  color: #fff;
+}
+
+a.btn.btn-bracjpg.search-icon {
+    padding: 3px 12px !important;
+    transition: none !important;
+    line-height: 20px !important;
+    color: #fff !important;
+}
+
+a.btn.btn-bracjpg.search-icon:hover {
+    background: #fff;
+    color: red !important;
+}
+
+ul.top-menu li,
+ul.phone-email li {
+    line-height: 35px;
+    color: #fff;
+    font-size: 11px;
+    display: inline-block;
+    border-right: 1px solid #ddd;
+}
+
+ul.phone-email li{
+    padding: 0 10px 0 0;
+    margin-right: 6px;
+    font-size: 12px;
+}
+
+ul.phone-email li svg.svg-inline--fa{
+    margin-right:5px;
+}
+
+ul.top-menu li:last-child,
+ul.phone-email li:last-child {
+    border: none;
+    margin-right: 0px;
+}
+
+ul.top-menu li a{
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: #fff !important;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+ul.top-menu li a:hover {
+    color: #000 !important;
+}
+
+.search-icon{
+    border: none !important;
+    font-size: 12px;
+    height: 25px;
+    line-height: 18px;
+}
+
+/*Header Top End*/
+
+/*Sticky Menu*/
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+}
+
+header .header-main.sticky {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 1px 0px #DB6527;
+    height:auto;
+    transition: all 2s;
+}
+
+.header-main nav.navbar {
+    padding: 0px;
+}
+
+/*.header-main ul.navbar-nav li {
+    margin-left: 8px;
+}*/
+
+.header-main ul.navbar-nav li a {
+    font-weight: 700;
+    letter-spacing: 0;
+    font-size: 25px;
+    padding: 10px 30px !important;
+    line-height: 60px;
+    color: #fff !important;
+    transition: all 1s;
+}
+
+.header-main.sticky ul.navbar-nav li a {
+    line-height: 40px;
+}
+
+
+ul.navbar-nav li.nav-item {
+    line-height: 70px;
+    transition: all 1s;
+    margin-right: 15px;
+    width:100%;
+}
+
+header .header-main.sticky ul.navbar-nav li.nav-item {
+    line-height: 60px;
+}
+
+/*Dropdown Menu Styles Start Here*/
+
+li.nav-item.dropdown:hover ul.dropdown-menu {
+    display: block !important;
+}
+
+ul.dropdown-menu{
+    background: #fff;
+    margin-top: 0px;
+    padding:0px;
+}
+
+
+ul.dropdown-menu li {
+    line-height: 40px;
+    border-bottom: 1px solid #da6727;
+}
+
+
+
+ul.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+ul.dropdown-menu li a {
+    text-transform: capitalize;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+li.nav-item.dropdown.second:hover ul.dropdown-menu.nested {
+    visibility: visible;
+}
+
+ul.dropdown-menu.nested {
+    visibility: hidden;
+    left: 100%;
+    top: -1px;
+}
+
+ul.dropdown-menu.nested li{
+    width: 250px;
+    line-height: 40px;
+}
+
+ul.dropdown-menu.nested.large-text li{
+    line-height: 25px;
+}
+
+ul.dropdown-menu.nested li a {
+    white-space: pre-wrap;
+}
+
+ul.navbar-nav li.nav-item ul.dropdown-menu li.nav-item {
+    line-height: 40px;
+}
+
+li.nav-item a.dropdown-item:focus, 
+li.nav-item a.dropdown-item:hover {
+    background-color: #fff;
+}
+
+.logo {
+    padding: 10px;
+    padding-left: 0px;
+}
+
+/*Dropdown Menu Styles End*/
+
+.header-bottom h2 {
+    font-size: 20px;
+    background: #e6e6e6;
+    padding: 8px 0;
+    color: #da6727;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0px !important;
+}
+
+
+a.nav-link.education-color {
+    background: #da6727;
+}
+
+
+a.nav-link.training-color {
+    background: #38948d;
+}
+
+
+a.nav-link.research-color {
+    background: #27aae1;
+}
+
+
+.advocacy-color {
+    color: #802988;
+}
+a.nav-link.advocacy-color {
+    background: #802988;
+}
+
+
+p.education-color {
+    color: #da6727;
+}
+
+
+p.training-color {
+    color: #38948d;
+}
+
+
+p.research-color {
+    color: #27aae1;
+}
+
+
+p.advocacy-color {
+    color: #802988;
+}
+
+
+/*******************************
+2. Header CSS End Here
+*******************************/
+
+
+
+
+/*******************************
+3. Banner CSS Start Here
+*******************************/
+
+section#banner {
+    min-height: 444px;
+}
+
+.covid-banner-image {
+    min-width: 100%;
+}
+
+.owl-dots {
+    display: none;
+}
+
+
+/*******************************
+3. Bannerr CSS End Here
+*******************************/
+
+
+/*******************************
+    Fixed Link CSS Start Here
+*******************************/
+
+section#fixed-link {
+    position: fixed;
+    right: 5px;
+    top: 50%;
+    width: 80px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.world-update {
+    background: #da6727;
+    padding: 5px;
+}
+
+.world-update a {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: #fff;
+}
+
+.bbc-bangla a {
+    font-size: 0.7rem;
+    text-align: center;
+    display: block;
+    line-height: 20px;
+    color: #da6727;
+}
+
+/*******************************
+    Fixed Link CSS End Here
+*******************************/
+
+
+/*******************************
+    Hotline Scroll Start Here
+*******************************/
+section#hotline-scroll marquee {
+    padding: 10px 0;
+    background: #e6e6e6;
+    color: #da6727;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+section#hotline-scroll marquee span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*******************************
+    Hotline Scroll End Here
+*******************************/
+
+
+
+
+
+/*******************************
+   Dean CSS Start Here
+*******************************/
+section#Dean {
+    /*padding: 50px 0;*/
+}
+
+
+section#Dean .container {
+    background: rgba(218, 103, 39, 0.2);
+    max-width: 1110px;
+    padding: 50px 30px;
+    margin-bottom: 60px;
+}
+
+.dean-image {
+    overflow: hidden;
+}
+
+.dean-message p {
+    margin-bottom: 15px;
+}
+
+.dean-message ol {
+    padding: 10px 50px 20px;
+}
+
+.dean-message ol li {
+    margin-bottom: 10px;
+}
+/*******************************
+   Dean CSS Start Here
+*******************************/
+
+
+
+
+
+/*******************************
+    Promo Numbers CSS Start Here
+*******************************/
+
+.promos {
+    display: flex;
+}
+
+.single-promo {
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.single-promo p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.single-promo p.number {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.single-promo:hover {
+    transform: scale(1.3);
+}
+
+/*******************************
+    Promo Numbers CSS End Here
+*******************************/
+
+
+
+
+/*******************************
+3. Awareness CSS Start Here
+*******************************/
+
+
+section#Awareness {
+    padding: 30px 0;
+}
+
+section#Awareness h3 {
+    
+}
+
+.awareness-image {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.single-awareness h4 a,
+#Training h4 a {
+    text-align: center;
+    background: #da6727;
+    padding: 15px 0;
+    color: white;
+    display: block;
+}
+
+.single-awareness h4 a {
+    font-size: 0.9rem;
+}
+
+.awareness-image .video-box img {
+    height: 250px;
+    width: auto;
+}
+
+.mfp-bg{
+    z-index: 9999999 !important;
+}
+
+
+.mfp-wrap{
+    z-index: 9999999999;
+}
+
+svg.svg-inline--fa.fa-play-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #fff;
+}
+
+a.video-link {
+    position: relative;
+    display: block;
+}
+
+
+
+
+
+/*awareness page*/
+
+section#Awareness.awareness-page .awareness-image {
+    max-height: 540px;
+}
+
+section#Awareness.awareness-page .awareness-image img {
+    height: 540px;
+}
+
+section#Awareness.awareness-page .single-awareness h4 a {
+    font-size: 1.2rem;
+}
+
+
+
+/*******************************
+3. Awareness CSS End Here
+*******************************/
+
+
+
+
+/*******************************
+4. Education CSS Start Here
+*******************************/
+
+section#Education {
+    background: rgba(255, 243, 236, 1);
+    padding: 50px 0;
+}
+
+
+section#Awareness h5,
+section#Training h5,
+section#Education h5 {
+    font-size: 20px;
+    color: #da6727;
+    margin-bottom: 20px;
+}
+
+section#Education h5 {
+    margin-bottom: 30px;
+}
+
+.education-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.section-heading.margin-minus {
+    margin-top: 0px;
+}
+
+.course-details {
+    display: none;
+}
+
+/*******************************
+4. Education CSS End Here
+*******************************/
+
+
+
+
+
+/*******************************
+5. Training CSS Start Here
+*******************************/
+
+section#Training {
+    background: rgba(235, 255, 253, 1);
+    padding: 50px 0;
+}
+
+.single-training {
+    /*max-height: 305px;*/
+    overflow: hidden;
+    border: 1px solid #38948d;
+    border-bottom: 0px;
+    height: 200px;
+    background: #fff;
+}
+
+.single-training h5 {
+    padding: 20px;
+    line-height: 26px;
+    margin-bottom: 0px !important;
+}
+
+.single-video h4 {
+    margin-top: 15px;
+    line-height: 23px;
+}
+
+.single-video .video-box {
+    max-height: 144px;
+    overflow: hidden;
+}
+
+section#Training h2,
+section#Training h3,
+section#Training h4,
+section#Training h5 {
+    color: #38948d;
+}
+
+#Training h4 a {
+    background: #38948d;
+}
+
+section#Training .section-heading {
+    border-bottom: 1px solid #38948d;
+}
+
+/*******************************
+5. Training CSS End Here
+********************************/
+
+
+
+/*******************************
+5. Webinar CSS Start Here
+********************************/
+
+
+
+
+#Webinar{
+    padding: 50px 0;
+}
+
+h4.show-webinar {
+    background: #e6e6e6;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.webinar-details {
+    display: none;
+    padding: 10px 20px;
+    background: #ccc;
+}
+
+
+/*******************************
+5. Webinar CSS End Here
+********************************/
+
+
+
+
+/*******************************
+6. Research CSS Start Here
+*******************************/
+
+
+section#Research {
+    padding: 50px 0;
+    background: rgba(219, 244, 255, 1);
+}
+
+.centre-director .director-image {
+    min-width: 100px;
+    overflow: hidden;
+}
+
+.director-image img {
+    width: 100px;
+}
+
+.research-center-part {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+
+.single-research {
+    background: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.single-research h4 {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.single-research h4 a {
+    color: #da6727;
+}
+
+.centre-director {}
+
+.director-info {
+    padding-left: 15px;
+}
+
+p.director-name {
+    padding-bottom: 10px;
+    font-size: 1rem;
+    color: #5d5d5d;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+p.director-name span,
+a.cv-link,
+.ongoing-research h4 a {
+    color: #1686ff;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.director-info a.cv-link {
+    padding-left: 0px;
+}
+
+.ongoing-research {
+    padding-top: 15px;
+}
+
+.ongoing-research h4 {
+    margin: 25px 0;
+}
+
+
+
+section#Research h2,
+section#Research h3,
+section#Research .single-research h4 a,
+section#Research .single-research h4 {
+    color: #27aae1;
+}
+
+
+
+
+
+
+
+.single-research h3 {
+    font-size: 1.2rem;
+    color: #0071a0 !important;
+    margin-bottom: 15px;
+}
+
+.single-research p.sub-head {
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.research-ongoing-part h4,
+.research-upcoming-part h4 {
+    margin-bottom: 15px;
+}
+
+section#Research .single-research h4 a:hover {
+    color: #006590;
+}
+
+span.black-color {
+    color: black;
+    margin-right: 10px;
+}
+
+.research-list-part ol li {
+    padding-left: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.section-banner {
+    overflow: hidden;
+}
+
+section#Research .section-heading {
+    border-bottom: 1px solid #27aae1;
+}
+
+.single-brief a {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.single-brief h4 {
+    margin-top: 15px;
+}
+
+.single-brief h4 a {
+    color: #27aae1;
+    line-height: 25px;
+}
+
+
+/*******************************
+6. Research CSS End Here
+*******************************/
+
+
+
+
+
+
+
+
+/*******************************
+7. Advocacy secion and adocacy page CSS Start Here
+*******************************/
+
+section#Advocacy {
+    padding: 50px 0;
+    background: rgba(254, 238, 255, 1);
+}
+
+section#Advocacy.advocacy-page {
+    background: none;
+}
+
+.single-blog {
+    margin: 25px 0;
+}
+
+.single-blog h5 {
+    position: relative;
+    padding-left: 25px;
+}
+
+.single-blog h5::before {
+    content: '\f1ea';
+    font-family: 'font awesome 5 free';
+    position: absolute;
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    color: #da6727;
+}
+
+.single-blog h5 a {
+    text-decoration: underline;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.single-blog p {
+    padding-left: 25px;
+}
+
+
+
+.blog-image {
+    overflow: hidden;
+}
+
+.internal-blog {
+    margin-bottom: 50px;
+}
+
+.internal-blog .single-blog h5,
+.external-blog .single-blog h5 {
+    position: unset;
+    padding: 15px 0 5px;
+}
+
+.internal-blog .single-blog h5:before,
+.external-blog .single-blog h5:before {
+    display: none;
+}
+
+.internal-blog .single-blog p,
+.external-blog .single-blog p {
+    padding: 0;
+}
+
+
+
+.research-brief-slider .owl-nav button,
+.awareness-slider .owl-nav button,
+.internal-blog .owl-nav button,
+.external-blog .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.research-brief-slider .owl-nav button.owl-prev,
+.awareness-slider .owl-nav button.owl-prev,
+.internal-blog .owl-nav button.owl-prev,
+.external-blog .owl-nav button.owl-prev {
+    left: -25px;
+}
+
+.research-brief-slider .owl-nav button.owl-next,
+.awareness-slider .owl-nav button.owl-next,
+.internal-blog .owl-nav button.owl-next,
+.external-blog .owl-nav button.owl-next {
+    right: -25px;
+}
+
+.research-brief-slider .owl-nav button.owl-prev,
+.research-brief-slider .owl-nav button.owl-next,
+.awareness-slider .owl-nav button.owl-prev,
+.awareness-slider .owl-nav button.owl-next,
+.internal-blog .owl-nav button.owl-prev,
+.internal-blog .owl-nav button.owl-next,
+.external-blog .owl-nav button.owl-prev,
+.external-blog .owl-nav button.owl-next {
+    font-size: 50px;
+    font-weight: 700;
+    color: #757575;
+    transition: all 1s;
+}
+
+.research-brief-slider .owl-nav button.owl-prev:hover,
+.research-brief-slider .owl-nav button.owl-next:hover,
+.awareness-slider .owl-nav button.owl-prev:hover,
+.awareness-slider .owl-nav button.owl-next:hover,
+.internal-blog .owl-nav button.owl-prev:hover,
+.internal-blog .owl-nav button.owl-next:hover,
+.external-blog .owl-nav button.owl-prev:hover,
+.external-blog .owl-nav button.owl-next:hover {
+    color: #da6727;
+}
+
+/*.internal-blog .owl-dots,
+.external-blog .owl-dots{
+    display: none;
+}*/
+
+#Advocacy .section-heading {
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid #802988;
+}
+
+section#Advocacy h2,
+section#Advocacy h3 {
+    color: #802988;
+}
+
+/*******************************
+7. Advocacy CSS End Here
+*******************************/
+
+
+
+
+
+
+
+
+/*******************************
+10. Footer CSS Start Here
+*******************************/
+
+footer#footer {
+    background: #1d262c;
+}
+
+.footer-top {
+    padding: 30px 0;
+    border-bottom: 1px solid #f9f9f980;
+}
+
+.footer-box-heading.footer-logo {
+    padding-right: 15%;
+}
+
+
+.footer-box-heading {
+    min-height: 90px;
+}
+
+.footer-box-heading h3 {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+.footer-box-content ul li {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 25px;
+    display: block;
+}
+
+.footer-box-content ul li svg.svg-inline--fa {
+    color: #fff;
+    margin-right: 5px;
+}
+
+
+
+ul.footer-social-menu {
+    /*margin: 25px 0px;*/
+}
+
+ul.footer-social-menu li {
+    margin-bottom: 0px;
+    margin-right: 15px;
+    line-height: 2.5rem;
+    display: inline-block;
+}
+
+ul.footer-social-menu li a {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid rgba(249, 249, 249, 0.5);
+    border-radius: 50%;
+    color: rgba(249, 249, 249, 0.5);
+}
+
+ul.footer-social-menu li a svg.svg-inline--fa {
+    margin-right: 0px;
+}
+
+ul.footer-social-menu li a:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #da6727 !important;
+}
+
+ul.footer-links li {
+    display: block;
+}
+
+ul.footer-links li a {
+    color: #fff;
+    padding: 5px 0;
+}
+
+ul.footer-links li {
+    /*float: left;*/
+    min-width: 50%;
+}
+
+
+
+.footer-blog-image {
+    float: left;
+    width: 30%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.footer-blog-image img {
+    min-height: 70px;
+    width: auto;
+    max-width: 150%;
+}
+
+.blog-title h5 {
+    margin-bottom: 5px;
+}
+
+.blog-title h5 a {
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.blog-title {
+    float: right;
+    width: 65%;
+}
+
+.single-blog-intro {
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.blog-title p.publishing-date {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(249, 249, 249, 0.5);
+}
+
+
+
+.footer-box-content form input[type="email"] {
+    min-height: 50px;
+    padding: 9px 15px;
+    font-size: 16px;
+    color: #8a8a8a;
+    outline: none;
+    box-shadow: none;
+}
+
+.footer-box-content form button.btn.btn-block {
+    background:  #005F63;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    margin-top: 20px;
+    min-height: 50px;
+    outline: none;
+}
+
+.footer-box-content form p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+ul.footer-links.hotline li {
+    /*padding-left: 20%;*/
+    margin-bottom: 15px;
+}
+
+ul.footer-links.hotline li span {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+
+
+.footer-bottom {
+    padding: 15px 0;
+    background: #151f25;
+}
+
+p.copyright-text {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: rgba(249, 249, 249, 0.5);
+    letter-spacing: 0.5px;
+    margin-bottom: 0px;
+}
+
+
+/*******************************
+10. Footer CSS End Here
+********************************/
+
+
+
+
+
+
+/*************************************************************
+**************************************************************
+                    RESPONSIVE STYLES
+**************************************************************
+*************************************************************/
+
+@media screen and (max-width: 767px) {
+
+    .logo a img {
+        margin-top: 5px;
+    }
+
+    .header-main nav.navbar {
+        display: inline-block !important;
+        padding: 10px;
+    }
+
+    ul.navbar-nav li.nav-item {
+        line-height: initial !important;
+    }
+
+
+
+
+
+    section#banner {
+        min-height: auto !important;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .promos {
+        display: block;
+    }
+
+    .single-promo {
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px 40px;
+    }
+
+    .section-heading a.float-right {
+        margin-top: 8px;
+    }
+
+
+
+
+    .single-awareness {
+        margin-bottom: 40px;
+    }
+
+    .awareness-image {
+        max-height: initial !important;
+    }
+
+    .awareness-image .video-box img {
+        height: auto;
+        width: 100% !important;
+    }
+
+
+    .single-video .video-box {
+        max-height: initial !important;
+    }
+
+    .single-video {
+        margin-bottom: 35px;
+    }
+
+    .single-training {
+        height: max-content !important;
+    }
+
+    .education-text {
+        margin-bottom: 25px;
+    }
+
+    section#Research h3 {
+        text-align: center;
+    }
+
+    .ongoing-research h4 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+
+    .internal-blog .owl-nav button.owl-prev,
+    .internal-blog .owl-nav button.owl-next,
+    .external-blog .owl-nav button.owl-prev,
+    .external-blog .owl-nav button.owl-next {
+        color: #da6727;
+    }
+
+    .internal-blog .owl-nav button.owl-prev,
+    .external-blog .owl-nav button.owl-prev {
+        left: 0;
+    }
+
+    .internal-blog .owl-nav button.owl-next,
+    .external-blog .owl-nav button.owl-next {
+        right: 0;
+    }
+
+
+    section#Awareness.awareness-page .awareness-image img {
+        height: auto;
+    }
+
+
+
+
+
+
+}
+
+@media (min-width: 1921px){
+    .single-event-image {
+        min-height: 410px !important;
+    }
+    
+    .single-event {
+        min-height: 630px;
+    }
+}
+
+@media (min-width: 1367px){
+    .container {
+        max-width: 85vw;
+    }
+
+    section#Dean .container {
+        max-width: 1600px;
+    }
+
+    img{
+        min-width: 100%;
+    }
+
+    ul.navbar-nav li.nav-item {
+        line-height: 110px;
+    }
+
+    .awareness-image {
+        max-height: 375px;
+    }
+
+    .awareness-image .video-box img {
+        height: 375px;
+    }
+
+    .single-training {
+        max-height: 445px;
+    }
+
+
+
+
+
+    .single-video .video-box {
+        max-height: 210px;
+    }
+
+    .education-text p {
+        margin-bottom: 25px;
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+
+
+}

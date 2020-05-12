@@ -325,7 +325,7 @@ $(document).ready(function(){
 
 
     $('.show-details').click(function(){
-        $('.course-details').slideToggle();
+        $(this).siblings('.course-details').slideToggle();
     });
 
 

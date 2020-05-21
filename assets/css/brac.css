@@ -679,6 +679,10 @@ section#Dean .container {
     Promo Numbers CSS Start Here
 *******************************/
 
+section#Promo-numbers {
+    padding-top: 50px;
+}
+
 .promos {
     display: flex;
 }
@@ -816,8 +820,16 @@ section#Education h5 {
     margin-bottom: 20px;
 }
 
-section#Education h5 {
+section#Education h5,
+section#Research .section-heading h5 {
     margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+
+section#Research .section-heading h5 a {
+    color: #27aae1 !important;
 }
 
 .education-text p {
@@ -835,6 +847,10 @@ section#Education h5 {
 
 .single-edu-faq {
     margin-bottom: 5px;
+}
+
+.single-edu-faq h3.show-details a {
+    color: #da6727;
 }
 
 .single-edu-faq .course-details {
@@ -976,6 +992,23 @@ section#Research {
     padding: 15px;
     border-radius: 5px;
 }
+
+.single-research ul li {
+    list-style: decimal;
+    margin: 5px 0 16px 20px;
+}
+
+.single-research ul li a {
+    font-size: 1.2rem;
+    color: #2babe1;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.single-research ul li a:hover {
+    color: #006590;
+}
+
 
 .single-research h4 {
     line-height: 1.5;

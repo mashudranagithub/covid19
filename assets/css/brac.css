@@ -940,7 +940,7 @@ section#Training .section-heading {
 
 h4.show-webinar {
     background: #e6e6e6;
-    padding: 10px;
+    padding: 10px 5px;
     cursor: pointer;
     margin-bottom: 0px;
 }
@@ -953,6 +953,24 @@ h4.show-webinar {
 
 .section-banner img {
     transform: none;
+}
+
+section#Training ul li {
+    list-style: decimal-leading-zero;
+    padding-left: 20px;
+    list-style-position: inside;
+    background: #e6e6e6;
+    color: #38948d;
+    font-weight: 700;
+}
+
+section#Training ul li h4 {
+    display: inline-block;
+}
+
+
+.webinar:first-child .webinar-details {
+    display: block;
 }
 
 
@@ -1125,12 +1143,6 @@ section#Research .section-heading {
     color: #27aae1;
     line-height: 25px;
 }
-
-
-.webinar:first-child .webinar-details {
-    display: block;
-}
-
 
 
 /*******************************

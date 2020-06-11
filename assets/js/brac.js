@@ -331,7 +331,7 @@ $(document).ready(function(){
 
 
     $('.show-webinar').click(function(){
-        $(this).siblings('.webinar-details').slideToggle();
+        $(this).parent('li').siblings('.webinar-details').slideToggle();
     });
 
 

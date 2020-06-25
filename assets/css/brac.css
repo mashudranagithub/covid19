@@ -1144,6 +1144,19 @@ section#Research .section-heading {
     line-height: 25px;
 }
 
+.research-upcoming-part .single-research li h4 a {
+    font-size: 1.1rem;
+}
+
+.research-upcoming-part {
+    margin-top: 30px;
+    border: 15px solid #fff;
+}
+
+.research-upcoming-part .single-research {
+    margin-bottom: 0px;
+}
+
 
 /*******************************
 6. Research CSS End Here

@@ -232,7 +232,7 @@ $(document).ready(function(){
     $('.research-brief-slider').owlCarousel({
         merge:true,
         loop:true,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:2000,
         autoplayTimeout:10000,
         smartSpeed:500,

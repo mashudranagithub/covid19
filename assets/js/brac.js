@@ -298,7 +298,7 @@ $(document).ready(function(){
     $('.external-blog').owlCarousel({
         merge:true,
         loop:true,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:2000,
         autoplayTimeout:15000,
         smartSpeed:500,

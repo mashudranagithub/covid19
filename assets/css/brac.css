@@ -1182,6 +1182,10 @@ section#Advocacy.advocacy-page {
     background: none;
 }
 
+section#Advocacy.advocacy-page ul li {
+    list-style: decimal;
+}
+
 .single-blog {
     margin: 25px 0;
 }
@@ -1192,7 +1196,7 @@ section#Advocacy.advocacy-page {
 }
 
 .single-blog h5::before {
-    content: '\f1ea';
+    /*content: '\f1ea';*/
     font-family: 'font awesome 5 free';
     position: absolute;
     font-weight: 900;

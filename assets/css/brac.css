@@ -1307,6 +1307,19 @@ section#Advocacy h3 {
     color: #802988;
 }
 
+ul.icccad-news {
+    margin: 20px 0 30px;
+    padding-left: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+ul.icccad-news li {
+    margin-bottom: 15px;
+    list-style: decimal;
+    padding-left: 5px;
+}
+
 /*******************************
 7. Advocacy CSS End Here
 *******************************/

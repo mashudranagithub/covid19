@@ -4,7 +4,7 @@ $(document).ready(function(){
         items:1,
         merge:true,
         loop:true,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:2000,
         autoplayTimeout:10000,
         smartSpeed:500,
@@ -28,7 +28,7 @@ $(document).ready(function(){
         items:4,
         merge:true,
         loop:true,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:2000,
         autoplayTimeout:10000,
         smartSpeed:500,
@@ -468,7 +468,7 @@ $(document).ready(function(){
     $('.internal-blog').owlCarousel({
         merge:true,
         loop:true,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:2000,
         autoplayTimeout:10000,
         smartSpeed:500,
@@ -539,14 +539,5 @@ $(document).ready(function(){
 
 
 	
-	
-	
-	
-
-
-
-
-
-
 
 });

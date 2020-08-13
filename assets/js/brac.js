@@ -431,6 +431,36 @@ $(document).ready(function(){
 
 
 
+    // Code for Arise Slider
+    $('.arise-slider').owlCarousel({
+        merge:true,
+        loop:true,
+        autoplay:false,
+        autoplaySpeed:2000,
+        autoplayTimeout:10000,
+        smartSpeed:500,
+        margin:20,
+        nav:true,
+        navDots:true,
+        lazyLoad:true,
+        responsive:{
+            300:{
+                items:1
+            },
+            480:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+
+
+
     // Code for Main Slider
     $('.research-brief-slider').owlCarousel({
         merge:true,

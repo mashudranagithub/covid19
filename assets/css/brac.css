@@ -1244,6 +1244,7 @@ section#Advocacy.advocacy-page ul li {
 
 
 
+.arise-slider .owl-nav button,
 .research-brief-slider .owl-nav button,
 .awareness-slider .owl-nav button,
 .internal-blog .owl-nav button,
@@ -1253,6 +1254,7 @@ section#Advocacy.advocacy-page ul li {
     transform: translateY(-50%);
 }
 
+.arise-slider .owl-nav button.owl-prev,
 .research-brief-slider .owl-nav button.owl-prev,
 .awareness-slider .owl-nav button.owl-prev,
 .internal-blog .owl-nav button.owl-prev,
@@ -1260,6 +1262,7 @@ section#Advocacy.advocacy-page ul li {
     left: -25px;
 }
 
+.arise-slider .owl-nav button.owl-next,
 .research-brief-slider .owl-nav button.owl-next,
 .awareness-slider .owl-nav button.owl-next,
 .internal-blog .owl-nav button.owl-next,
@@ -1267,6 +1270,8 @@ section#Advocacy.advocacy-page ul li {
     right: -25px;
 }
 
+.arise-slider .owl-nav button.owl-prev,
+.arise-slider .owl-nav button.owl-next,
 .research-brief-slider .owl-nav button.owl-prev,
 .research-brief-slider .owl-nav button.owl-next,
 .awareness-slider .owl-nav button.owl-prev,
@@ -1281,6 +1286,8 @@ section#Advocacy.advocacy-page ul li {
     transition: all 1s;
 }
 
+.arise-slider .owl-nav button.owl-prev:hover,
+.arise-slider .owl-nav button.owl-next:hover,
 .research-brief-slider .owl-nav button.owl-prev:hover,
 .research-brief-slider .owl-nav button.owl-next:hover,
 .awareness-slider .owl-nav button.owl-prev:hover,
